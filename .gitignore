@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Data artifacts (regenerate with CLI)
+data/processed/*.jsonl
+data/processed/*.meta.json
+data/benchmarks/*.jsonl
+data/raw/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/benchmarks/.gitkeep
+
+# Models / caches
+.cache/
+models/
+*.gguf
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Experiments
+experiments/*
+!experiments/.gitkeep
